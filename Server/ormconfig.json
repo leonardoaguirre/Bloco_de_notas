@@ -1,0 +1,25 @@
+{
+   "name" : "default",
+   "type": "mysql",
+   "host": "localhost",
+   "port": 3308,
+   "username": "root",
+   "password": "mysql",
+   "database": "bloco",
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "./Src/Models/**.ts"
+  ],
+   "migrations": [
+      "./Src/Migration/**/*.ts"
+   ],
+   "subscribers": [
+      "./Src/Subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "Src/Models",
+      "migrationsDir": "Src/Migration",
+      "subscribersDir": "Src/Subscriber"
+   }
+}
